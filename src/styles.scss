@@ -6,6 +6,7 @@
 2. Cards
 3. Chat
 4. NavBar
+5. Data Tables
 (). Resposive
 */
 
@@ -27,6 +28,9 @@ body {
 .bg-origin-alt{
   background: $sp-dark-alt;
 }
+.bg-extra-light{
+  background: #f9f9f9!important;
+}
 .copy-text{
   color: $sp!important;
 }
@@ -47,6 +51,12 @@ body {
 }
 .text-big{
   font-size: 1.1rem;
+}
+.text-small{
+  font-size: 0.7rem;
+}
+.text-medium{
+  font-size: 1.05rem;
 }
 .blink {
   animation: blink-animation 1s steps(5, start) infinite;
@@ -71,7 +81,12 @@ body {
 .uppercase{
   text-transform: uppercase;
 }
-
+.to-hide{
+  display: none!important;
+}
+.hide{
+  display: none;
+}
 
 
 
@@ -98,7 +113,9 @@ body {
 }
 .card-games-ahead{
   margin-bottom: -50px;
+  cursor: pointer;
   border: none!important;
+  z-index: 99999!important;
   -webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
   -moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
   box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
@@ -127,6 +144,17 @@ body {
     width: 100%!important;
     text-align: center;
     padding-top: 5px;
+  }
+  .stadium-name{
+    width: 100%;
+    text-align: center;
+    border-top: solid 1px rgba(122, 2, 2, 0.05);
+
+    img{
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
@@ -176,11 +204,121 @@ body {
 
 // NavBar
 .navbar{
-
   .navbar-brand{
     font-size: 14px;
     &:hover {
       color: $sp;
     }
   }
+}
+
+
+
+
+// Data Tables
+#main-list-challenge {
+  // padding-left: 0rem!important;
+  // padding-right: 0rem!important;
+
+  table{
+    tr{
+      background: #f9f9f9!important;
+      // &:hover{
+      //   background-color: #fff!important;
+      // }
+      &:hover .match tr{
+        background-color: #fff!important;
+        z-index: 99999!important;
+        -webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.29);
+        -moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.29);
+        box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.29);
+      }
+      td {
+        border: none!important;
+        .item-match{
+          width: 100%;
+          height: auto;
+          .match{
+            width: 100%;
+            cursor: pointer;
+            -webkit-transition: all 0.5s; /* Safari */
+            transition: all 0.5s;
+
+            td:nth-child(1){
+              width: auto!important;
+              text-align: center;
+            }
+            td:nth-child(2){
+              width: 20%;
+              text-align: center;
+            }
+            td:nth-child(3){
+              width: 40%;
+              text-align: center;
+            }
+            td:nth-child(4){
+              width: 20%;
+              text-align: center;
+            }
+            td:nth-child(5){
+              width: auto!important;
+              text-align: center;
+            }
+            img {
+              width: 30px;
+              height: 30px;
+            }
+            tr{
+              background: #f9f9f9;
+              &:hover {
+                background: #fff!important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dataTable.no-footer{
+    border-bottom: solid 1px rgba(0,0,0,0.05);
+  }
+  .dataTables_filter {
+    width: 100%!important;
+    label{
+      text-align: left;
+      width: 100%;
+      visibility: hidden;
+      position: relative;
+      padding-left: 1em!important;
+      padding-right: 1em!important;
+      &:before {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1.5em!important;
+        margin-bottom: 5px;
+        content: 'Buscar Encuentro';
+      }
+    }
+    input {
+      border: solid 1px rgba(0,0,0,0.05);
+      padding: 10px 15px;
+      width: 97.5%!important;
+      visibility: visible!important;
+      margin-right: 0.5em!important;
+      background: #fff;
+      &:focus{
+        outline: transparent!important;
+      }
+      &:active {
+        outline: transparent!important;
+      }
+    }
+  }
+}
+
+.paginate_button{
+  border: solid 1px rgba(0,0,0,0.05)!important;
+  background: transparent!important;
 }

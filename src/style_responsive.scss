@@ -31,10 +31,42 @@
 /*RESPONSIVE STYLES ADJUST*/
 /*media styles for responsive*/
 @media (max-width: 321px) {
-
+  #main-list-challenge {
+    table{
+      tr{
+        td {
+          .match{
+            .dynamic-class-mobile{
+              display: none!important;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
+
+@media (max-width: 400px) {
+  #main-list-challenge {
+    table{
+      tr{
+        td {
+          .match{
+            img {
+              width: 50px!important;
+              height: 50px!important;
+            }
+            .dynamic-class-mobile{
+              display: none!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 480px) {
 
@@ -108,7 +140,7 @@
 
 @media (min-width: 1801px) and (max-width: 2500px) {
   .jumbotron{
-    width: 60%!important;
+    width: 50%!important;
     border-radius: 10px!important;
   }
 }
