@@ -1,27 +1,142 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-origin">
-  <a class="navbar-brand" href="#">Navbar</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-origin fixed-top">
+  <a class="navbar-brand" href="#"><i class="fa fa-user-circle"></i> Edwin Márquez</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarColor02">
     <ul class="navbar-nav mr-auto">
+
+    </ul>
+    <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Partidos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
+        <a class="nav-link" href="#">Competicion</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link text-primary" href=""><i class="fa fa-power-off"></i> Salir</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link copy-text" href="#"><i class="fa fa-trophy"></i> 2018 &copy; TekProvider</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
+
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-12">
+        <img src="../assets/img/logo/sp2-120.png" alt="sportchallenge">
+    </div>
+    <div class="col-lg-7 col-md-9 col-sm-11 mx-auto">
+      <div class="pulsed-game-container">
+
+          <div class="chat-opener-label text-dark"><i class="fa fa-comments"></i> Comenta</div>
+
+          <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead">
+              <div class="card-body">
+                  <div class="d-flex flex-nowrap data-holder">
+                    <div class="order-1">
+                        <img src="../assets/img/teams/russia.svg" alt="equipo"><br>
+                        <label>Rusia</label>
+                    </div>
+                    <div class="order-2">
+                      <!-- <span><label class="blink bold uppercase">Proximo Partido</label></span><br> -->
+                      <span class="text-primary text-big"><i class="fa fa-clock-o"></i> 18:00</span><br>
+                      <span><i class="fa fa-calendar"></i> 14/06/2018</span>
+                      <h2>VS</h2>
+                    </div>
+                    <div class="order-3">
+                        <img src="../assets/img/teams/saudi-arabia.svg" alt="equipo"><br>
+                        <label>Arabia Saudita</label>
+                    </div>
+                  </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron bg-white text-dark mx-auto">
+    <div class="row mt-5">
+      <div class="col-lg-8 col-md-8 col-sm-12 mx-auto bg-white">
+        <table datatable [dtOptions]="dtOptions" class="row-border hover">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Foo</td>
+                <td>Bar</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Someone</td>
+                <td>Youknow</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Iamout</td>
+                <td>Ofinspiration</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Yoda</td>
+                <td>Skywalker</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Patrick</td>
+                <td>Dupont</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>Barack</td>
+                <td>Obama</td>
+              </tr>
+              <tr>
+                <td>7</td>
+                <td>François</td>
+                <td>Holland</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Michel</td>
+                <td>Popo</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>Chuck</td>
+                <td>Norris</td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>Simon</td>
+                <td>Robin</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>Louis</td>
+                <td>Lin</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>Zelda</td>
+                <td>Link</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </div>

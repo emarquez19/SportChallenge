@@ -1,8 +1,186 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~style_responsive.scss';
+/*
+0. Variables Nuevas
+1. Cuerpo Base
+2. Cards
+3. Chat
+4. NavBar
+(). Resposive
+*/
+
+// Variables
+$sp:    #01d56e !default;
+$sp-dark:  #23222a !default;
+$sp-dark-alt:  #515c7f !default;
+
+
+
+// Estilos del Cuerpo Base
 body {
-  background: #23222a;
+  background: $sp-dark;
+  padding-top: 50px;
+}
+.bg-origin{
+  background: $sp-dark;
+}
+.bg-origin-alt{
+  background: $sp-dark-alt;
+}
+.copy-text{
+  color: $sp!important;
+}
+.border-error{
+  border: solid 1px red;
+}
+.border-warning{
+  border: solid 1px orange;
+}
+.border-success{
+  border: solid 1px #01d56e;
+}
+.border-default{
+  border: solid 1px #ddd;
+}
+.w-33{
+  width: 33.3333%!important;
+}
+.text-big{
+  font-size: 1.1rem;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+.text-brand-color{
+  color: #01d56e;
+}
+.bold{
+  font-weight: bold;
+}
+.uppercase{
+  text-transform: uppercase;
 }
 
-.bg-origin{
-  background: #23222a;
+
+
+
+// Cards
+.rounded-small{
+  border-radius: 3px;
+}
+.rounded-medium{
+  border-radius: 5px;
+}
+.rounded-big{
+  border-radius: 10px;
+}
+.rounded-biger{
+  border-radius: 15px;
+}
+.card-body{
+  padding: 1rem 0.5rem 0.3rem 0.5rem;
+}
+.pulsed-game-container{
+  animation: pulse 1s infinite;
+  border: none!important;
+  border-radius: 10px;
+}
+.card-games-ahead{
+  margin-bottom: -50px;
+  border: none!important;
+  -webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
+  -moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
+  box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.14);
+
+  .data-holder{
+
+    div:nth-child(1){
+      width: 33.3333%;
+      text-align: center;
+    }
+    div:nth-child(2){
+      width: 33.3333%;
+      text-align: center;
+    }
+    div:nth-child(3){
+      width: 33.3333%;
+      text-align: center;
+    }
+  }
+  img {
+    width: 60px;
+    height: 60px;
+    clear: both!important;
+  }
+  label {
+    width: 100%!important;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
+.pulsed-game-container:hover {
+  animation: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(1, 213, 110, 0.8);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 15px rgba(1, 213, 110, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(1, 213, 110, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(1, 213, 110, 0.7);
+    box-shadow: 0 0 0 0 rgba(1, 213, 110, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 15px rgba(1, 213, 110, 0);
+      box-shadow: 0 0 0 15px rgba(1, 213, 110, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(1, 213, 110, 0);
+      box-shadow: 0 0 0 0 rgba(1, 213, 110, 0);
+  }
+}
+
+
+
+
+// Chat
+.chat-opener-label{
+  position: absolute;
+  // border: solid 1px red;
+  margin-top: -27px;
+  right: 30px;
+}
+
+
+
+
+// NavBar
+.navbar{
+
+  .navbar-brand{
+    font-size: 14px;
+    &:hover {
+      color: $sp;
+    }
+  }
 }
