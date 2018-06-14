@@ -38,7 +38,7 @@
 
         <div class="chat-opener-label text-dark"><i class="fa fa-comments"></i> Comenta</div>
 
-        <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead" (click)="OpenMatchDetail()">
+        <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead" [ngClass]="'first second'" (click)="OpenMatchDetail()">
             <div class="card-body">
                 <div class="d-flex flex-nowrap data-holder">
                   <div class="order-1">
