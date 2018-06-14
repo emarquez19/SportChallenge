@@ -34,31 +34,45 @@
         <img src="../assets/img/logo/sp2-150.png" alt="sportchallenge">
     </div>
     <div class="col-lg-7 col-md-9 col-sm-11 mx-auto">
-      <div class="pulsed-game-container">
+      <div class="pulsed-game-container" id="ahead-match-block">
 
-          <div class="chat-opener-label text-dark"><i class="fa fa-comments"></i> Comenta</div>
+        <div class="chat-opener-label text-dark"><i class="fa fa-comments"></i> Comenta</div>
 
-          <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead">
-              <div class="card-body">
-                  <div class="d-flex flex-nowrap data-holder">
-                    <div class="order-1">
-                        <img src="../assets/img/teams/russia.svg" alt="equipo"><br>
-                        <label>Rusia</label>
-                    </div>
-                    <div class="order-2">
-                      <!-- <span><label class="blink bold uppercase">Proximo Partido</label></span><br> -->
-                      <span class="text-primary text-big"><i class="fa fa-clock-o"></i> 18:00</span><br>
-                      <span><i class="fa fa-calendar"></i> 14/06/2018</span>
-                      <h2>VS</h2>
-                    </div>
-                    <div class="order-3">
-                        <img src="../assets/img/teams/saudi-arabia.svg" alt="equipo"><br>
-                        <label>Arabia Saudita</label>
-                    </div>
+        <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead" (click)="OpenMatchDetail()">
+            <div class="card-body">
+                <div class="d-flex flex-nowrap data-holder">
+                  <div class="order-1">
+                      <img src="../assets/img/teams/russia.svg" alt="equipo"><br>
+                      <label>Rusia</label>
                   </div>
-                  <div class="stadium-name"><img src="../assets/img/stadium.svg" alt="estadio"> Nizhny Novgorod Stadium</div>
-              </div>
+                  <div class="order-2">
+                    <!-- <span><label class="blink bold uppercase">Proximo Partido</label></span><br> -->
+                    <span class="text-primary text-big"><i class="fa fa-clock-o"></i> 18:00</span><br>
+                    <span><i class="fa fa-calendar"></i> 14/06/2018</span>
+                    <h2>VS</h2>
+                  </div>
+                  <div class="order-3">
+                      <img src="../assets/img/teams/saudi-arabia.svg" alt="equipo"><br>
+                      <label>Arabia Saudita</label>
+                  </div>
+                </div>
+                <div class="stadium-name"><img src="../assets/img/stadium.svg" alt="estadio"> Nizhny Novgorod Stadium</div>
+                <div id="match-detail-block">
+                  <div class="stadium-holder">
+                      <div class="stadium-match">
+                        <div class="match-score">
+                          <div class="team1">
+                              5
+                          </div>
+                          <div class="team2">
+                              0
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
             </div>
+          </div>
       </div>
     </div>
   </div>

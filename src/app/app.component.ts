@@ -39,7 +39,34 @@ export class AppComponent implements OnInit {
             'sSortAscending':  ': Activar para ordenar la columna de manera ascendente',
             'sSortDescending': ': Activar para ordenar la columna de manera descendente'
         }
-    }
+      }
     };
   }
+
+  OpenMatchDetail() {
+
+    const bloquePadre = $('#ahead-match-block');
+    const tarjetaEncuentro = $('.card-games-ahead');
+
+    // $('#ahead-match-block').addClass('animate-match');
+
+    if (tarjetaEncuentro.hasClass('make-card-games-normal')) {
+      tarjetaEncuentro.toggleClass('make-card-games-normal');
+    } else {
+      tarjetaEncuentro.toggleClass('make-card-games-normal');
+    }
+
+    if (bloquePadre.hasClass('animate-match')) {
+      bloquePadre.toggleClass('animate-match');
+      window.setTimeout(function() {
+        $('#ahead-match-block').removeClass('open-match-detail');
+      }, 100);
+    } else {
+      bloquePadre.toggleClass('animate-match');
+      window.setTimeout(function() {
+        $('#ahead-match-block').toggleClass('open-match-detail');
+      }, 400);
+    }
+  }
+
 }
