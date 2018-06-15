@@ -49,6 +49,9 @@ body {
 .w-33{
   width: 33.3333%!important;
 }
+.text-italic{
+  font-style: italic;
+}
 .text-big{
   font-size: 1.1rem;
 }
@@ -215,7 +218,46 @@ body {
   display: none;
   width: 100%;
   height: 100%;
+  margin-top: 5px;
 
+  .stadium-holder{
+    background: linear-gradient(top, rgba(255,255,255,0), rgba(255,255,255,1)), url(./assets/img/bg-stadium.jpg)!important;
+    min-height: 250px!important;
+    text-align: center;
+    background-size: cover!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    .match-score{
+      width: 100%;
+      font-size: 125px;
+      font-weight: 700;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+      color: #fff!important;
+      .team1{
+        width: 33.333%;
+        float: left;
+      }
+      .team2{
+        width: 33.333%;
+        float: right;
+      }
+    }
+  }
+  #chat-in-match{
+    .chat-headerinfo{
+      font-size: 0.95rem!important;
+      width: 100%;
+      text-align: center;
+      margin: 10px 0 20px!important;
+      border-bottom: solid 1px rgba(0,0,0,0.05);
+    }
+    .chat-body{
+
+    }
+    .chat-textbox{
+
+    }
+  }
 }
 
 

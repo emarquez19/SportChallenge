@@ -1,0 +1,206 @@
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-12">
+        <img src="../assets/img/logo/sp2-150.png" alt="sportchallenge">
+    </div>
+    <div class="col-lg-7 col-md-9 col-sm-11 mx-auto">
+      <div class="pulsed-game-container" id="ahead-match-block">
+
+        <div class="chat-opener-label text-dark"><i class="fa fa-comments"></i> Comenta</div>
+
+        <div class="card text-white bg-white text-dark rounded-big mt-4 card-games-ahead" [ngClass]="'first second'" (click)="OpenMatchDetail()">
+            <div class="card-body">
+                <div class="d-flex flex-nowrap data-holder">
+                  <div class="order-1">
+                      <img src="../assets/img/teams/russia.svg" alt="equipo"><br>
+                      <label>Rusia</label>
+                  </div>
+                  <div class="order-2">
+                    <!-- <span><label class="blink bold uppercase">Proximo Partido</label></span><br> -->
+                    <span class="text-primary text-big"><i class="fa fa-clock-o"></i> 18:00</span><br>
+                    <span><i class="fa fa-calendar"></i> 14/06/2018</span>
+                    <h2>VS</h2>
+                  </div>
+                  <div class="order-3">
+                      <img src="../assets/img/teams/saudi-arabia.svg" alt="equipo"><br>
+                      <label>Arabia Saudita</label>
+                  </div>
+                </div>
+                <div class="stadium-name"><img src="../assets/img/stadium.svg" alt="estadio"> Nizhny Novgorod Stadium</div>
+                <div id="match-detail-block">
+                  <div class="stadium-holder">
+                      <div class="stadium-match">
+                        <div class="match-score">
+                          <div class="team1">
+                              5
+                          </div>
+                          <div class="team2">
+                              0
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div id="chat-in-match">
+                      <div class="chat-headerinfo">
+                        <span class="text-italic"><i class="far fa-comments"></i> Edwin Marquez esta escribiendo...</span>
+                      </div>
+                      <div class="chat-body">
+                        Lord of the rings
+                      </div>
+                      <div class="chat-textbox">
+                        Escribir mensaje...
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron bg-extra-light text-dark mx-auto" id="main-list-challenge">
+    <div class="row mt-4">
+      <div class="col-lg-12 col-md-12 col-sm-12 mx-auto">
+        <table datatable [dtOptions]="dtOptions">
+            <thead class="to-hide">
+              <tr>
+                <th>TABLE</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="item-match">
+                    <table class="match">
+                      <tr>
+                        <td>
+                            <img src="../assets/img/teams/portugal.svg" alt="equipo">
+                        </td>
+                        <td class="dynamic-class-mobile">
+                          Portugal
+                        </td>
+                        <td>
+                          <span class="text-small"><i class="fa fa-calendar"></i> 14/06/2018</span><br>
+                          <span class="bold">VS</span>
+                        </td>
+                        <td class="dynamic-class-mobile">
+                          España
+                        </td>
+                        <td>
+                            <img src="../assets/img/teams/spain.svg" alt="equipo">
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                    <div class="item-match">
+                      <table class="match">
+                        <tr>
+                          <td>
+                              <img src="../assets/img/teams/france.svg" alt="equipo">
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Francia
+                          </td>
+                          <td>
+                            <span class="text-small"><i class="fa fa-calendar"></i> 14/06/2018</span><br>
+                            <span class="bold">VS</span>
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Australia
+                          </td>
+                          <td>
+                              <img src="../assets/img/teams/australia.svg" alt="equipo">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="item-match">
+                      <table class="match">
+                        <tr>
+                          <td>
+                              <img src="../assets/img/teams/argentina.svg" alt="equipo">
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Argentina
+                          </td>
+                          <td>
+                            <span class="text-small"><i class="fa fa-calendar"></i> 14/06/2018</span><br>
+                            <span class="bold">VS</span>
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Islandia
+                          </td>
+                          <td>
+                              <img src="../assets/img/teams/aland-islands.svg" alt="equipo">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="item-match">
+                      <table class="match">
+                        <tr>
+                          <td>
+                              <img src="../assets/img/teams/germany.svg" alt="equipo">
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Alemania
+                          </td>
+                          <td>
+                            <span class="text-small"><i class="fa fa-calendar"></i> 14/06/2018</span><br>
+                            <span class="bold">VS</span>
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            México
+                          </td>
+                          <td>
+                              <img src="../assets/img/teams/mexico.svg" alt="equipo">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="item-match">
+                      <table class="match">
+                        <tr>
+                          <td>
+                              <img src="../assets/img/teams/brazil.svg" alt="equipo">
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Brasil
+                          </td>
+                          <td>
+                            <span class="text-small"><i class="fa fa-calendar"></i> 14/06/2018</span><br>
+                            <span class="bold">VS</span>
+                          </td>
+                          <td class="dynamic-class-mobile">
+                            Suiza
+                          </td>
+                          <td>
+                              <img src="../assets/img/teams/switzerland.svg" alt="equipo">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
